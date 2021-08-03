@@ -21,7 +21,7 @@ class AppNavbar extends Component {
         });
     }
 
-    render() {
+    render() { 
         return (
             <div>
                 <Navbar color="dark" dark expand="sm" className="mb-5">
@@ -36,7 +36,7 @@ class AppNavbar extends Component {
                                 {/* //  ml-auto will margin to the right */}
                                 <NavItem>
                                     <NavLink href="https://docs.google.com/document/d/13u7qWP3RZ_FjxLXyzCrllUtceqj_cj9A67HFfvy06Sg/edit">
-                                        my Notes
+                                        My Notes
                                     </NavLink>
                                 </NavItem>
                             </Nav>
