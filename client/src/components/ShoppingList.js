@@ -32,12 +32,23 @@ class ShoppingList extends Component {
                     }}
                 >
                     Add Item</Button>
-
                 <ListGroup>
                     <TransitionGroup className="shopping-list">
                         {items.map(({ id, name }) => (
                             <CSSTransition key={id} timeout={500} classNames="fade">
                                 <ListGroupItem>
+                                    {/* remove item button */}
+                                    <Button
+                                        className="remove-btn"
+                                        color="danger"
+                                        size="sm"
+                                        onClick={() => {
+                                            this.setState(state => ({
+                                                items: state.items.filter(item => item.id !== id)
+                                            }));
+                                        }}
+                                    >&times;</Button>
+
                                     {name}
                                 </ListGroupItem>
                             </CSSTransition>
