@@ -32,8 +32,8 @@ class AppNavbar extends Component {
                         <NavbarBrand href='/'>ShoppingList</NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
-                            <Nav className="ml-auto" navbar>
-                                {/* //  ml-auto will margin to the right */}
+                            <Nav className ="ms-auto" navbar>
+                                {/* //  ml-auto will margin to the right (ms-auto for BootStrap 5) */}
                                 <NavItem>
                                     <NavLink href="https://docs.google.com/document/d/13u7qWP3RZ_FjxLXyzCrllUtceqj_cj9A67HFfvy06Sg/edit">
                                         My Notes
